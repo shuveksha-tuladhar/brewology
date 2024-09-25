@@ -1,7 +1,13 @@
+import { Footer } from "../components/Footer";
+import { Header } from "../components/Header";
+
 export function IcedDrinks() {
     return (
         <div>
-            This is Iced Drinks Page. 
+           <div>
+            <Header drinkType="Iced" drinkNext="Hot"/>
+            <Footer/>
+        </div>
         </div>
     )
 }

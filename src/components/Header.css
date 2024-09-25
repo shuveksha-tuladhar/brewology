@@ -1,0 +1,9 @@
+
+.custom-line {
+    border: none; /* Removes default styling */
+    height: 5px; /* Sets thickness of the line */
+    background-color: #4a3931; /* Line color */
+    width: 100%; /* Adjusts the width of the line */
+    margin: 20px auto; /* Centers the line horizontally */
+  }
+
