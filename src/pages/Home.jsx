@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import "./Home.css";
+import { Footer } from "../components/Footer";
 
 export function Home() {
   const navigate = useNavigate();
@@ -33,11 +34,7 @@ export function Home() {
             ICED DRINKS
           </button>
         </div>
-        <footer className="footer">
-          <p>
-            Made with ❤️ by Shuveksha Tuladhar &copy; {new Date().getFullYear()}
-          </p>
-        </footer>
+        <Footer/>
       </div>
     </div>
   );

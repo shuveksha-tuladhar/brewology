@@ -11,26 +11,28 @@
 }
 
 .bg-image {
-  background-image: url("../../public/background.jpg");
+  background-image: url("/background.jpg");
   height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  opacity: 0.9;
+  opacity: 0.8;
 }
 
 h1 {
-  color: #fffada;
+  color: white;
   font-size: 4rem;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   padding-top: 20px;
+  opacity: 1;
 }
 
 p {
-  color: #fffada;
+  color: white;
   font-size: 1rem;
   margin-top: 10px;
   padding-top: 10px;
+  opacity: 1;
 }
 
 .button-group {
@@ -43,7 +45,7 @@ p {
 }
 
 .drink-button {
-  background: linear-gradient(45deg, #a0583c, #c08267);
+  background: linear-gradient(45deg, #a0583c, #4a3931);
   border: none;
   color: white;
   padding: 10px 20px;
@@ -58,14 +60,6 @@ p {
   background: linear-gradient(45deg, #c08267, #a0583c);
 }
 
-.footer {
-  background-color: rgba(0, 0, 0, 0.7);
-  color: #fffada;
-  text-align: center;
-  padding: 10px 0;
-  width: 100%;
-  position: sticky;
-}
 
 /* Responsive design */
 @media (max-width: 768px) {
