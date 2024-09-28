@@ -1,0 +1,15 @@
+
+.custom-line {
+    border: none; 
+    height: 5px; 
+    background-color: #4a3931; 
+    width: 100%;  
+  }
+
+  .heading-text {
+    text-align: center;
+  font-size: 1.25rem;
+  margin-top: 5px;
+  color: #4a3931;
+  }
+
