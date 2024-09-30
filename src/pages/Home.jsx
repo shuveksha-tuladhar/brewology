@@ -23,9 +23,9 @@ export function Home() {
           </div>
         </nav>
         <h1 className="text-xl-center">Drinks crafted with passion</h1>
-        <p className="text-xl-center">
+        <h4 className="text-xl-center">
           Start your exciting day with a cup of hot or cold drinks
-        </p>
+        </h4>
         <div className="button-group">
           <button className="drink-button" onClick={handleHotDrinks}>
             HOT DRINKS
