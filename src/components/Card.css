@@ -2,9 +2,9 @@
 .card-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 300px); 
-    gap: 20px; /* Space between the cards */
+    gap: 20px; 
     padding: 20px;
-    justify-content: center; /* Optional: Center the cards horizontally */
+    justify-content: center; 
   }
   
   .card {
@@ -30,5 +30,9 @@
   .card-body {
     padding: 20px;
     text-align: center;
-    flex-grow: 1; /* Allow the body to take available space */
+    flex-grow: 1; 
+  }
+
+  .card-title {
+    text-align: center;
   }
