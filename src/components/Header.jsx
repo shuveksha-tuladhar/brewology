@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
 
-export function Header({ drinkType, drinkNext }) {
+export function Header({drinkType}) {
   const navigate = useNavigate();
+
+  const drinkNext = drinkType === "Hot" ? "Iced" : "Hot";
 
   const handleDrinkClick = () => {
     if (drinkNext === "Hot") {
