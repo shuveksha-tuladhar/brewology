@@ -6,6 +6,7 @@ import { Header } from "../components/Header";
 import { useEffect, useState } from "react";
 import Page503 from "./error/503";
 import Page404 from "./error/404";
+import { SearchBar } from "../components/SearchBar";
 
 export function Drinks() {
   const { drinkType } = useParams();
@@ -14,8 +15,10 @@ export function Drinks() {
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
 
+  const [searchInput, setSearchInput] = useState("");
+
   useEffect(() => {
-    setError(null); 
+    setError(null);
     if (drinkType === "hot-drinks") {
       setDrinksToDisplay("Hot");
     } else if (drinkType === "iced-drinks") {
@@ -49,6 +52,12 @@ export function Drinks() {
     }
   }, [drinksToDisplay]);
 
+  const filteredData = searchInput
+    ? data.filter((drink) =>
+        drink.title.toLowerCase().includes(searchInput.toLowerCase())
+      )
+    : data;
+
   if (error) {
     console.error(error.error);
     switch (error.status) {
@@ -62,14 +71,15 @@ export function Drinks() {
   return (
     <div>
       <Header drinkType={drinksToDisplay} />
+      <SearchBar searchInput={searchInput} setSearchInput={setSearchInput} />
       {loading && (
-        <div class="d-flex justify-content-center">
-          <div class="spinner-border" role="status">
-            <span class="sr-only"></span>
+        <div className="d-flex justify-content-center">
+          <div className="spinner-border" role="status">
+            <span className="sr-only"></span>
           </div>
         </div>
       )}
-      {!loading && <Card drinkType={drinksToDisplay} data={data} />}
+      {!loading && <Card drinkType={drinksToDisplay} data={filteredData} />}
       <Footer />
     </div>
   );

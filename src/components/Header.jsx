@@ -27,7 +27,7 @@ export function Header({drinkType}) {
         </div>
       </nav>
       <hr className="custom-line" />
-      <p className="heading-text">Explore the {drinkType} drinks!</p>
+      <h1 className="heading-text">Explore the {drinkType} drinks!</h1>
     </>
   );
 }
