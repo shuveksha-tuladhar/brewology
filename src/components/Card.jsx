@@ -7,7 +7,7 @@ export function Card({ data }) {
   const drinksToDisplay = data;
 
   if (!drinksToDisplay || drinksToDisplay.length === 0) {
-    return <p className="no-drinks-message">No drinks available</p>;
+    return <p className="no-drinks-message">No drinks found matching your input!</p>;
   }
 
   const handleCardClick = (drink) => {
