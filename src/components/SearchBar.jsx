@@ -15,7 +15,7 @@ export function SearchBar({ searchInput, setSearchInput }) {
   return (
     <>
       <div className="drinksSearch">
-        <label htmlFor="search">Search Drinks </label>
+        <label htmlFor="search">Search for Your Favorite Drink </label>
         <div className="input-group">
           <FaSearch aria-label="search" />
           <input

@@ -30,7 +30,7 @@
   }
   
   .input-group svg {
-    height: 100%;
+    height: 20px;
     width: auto;
     margin-right: 10px;
     cursor: pointer;
@@ -42,5 +42,7 @@
     cursor: pointer;
     display: flex;
     align-items: center;
+    padding: 0;
+    margin: 0;
   }
   

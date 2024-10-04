@@ -36,3 +36,12 @@
   .card-title {
     text-align: center;
   }
+
+  .no-drinks-message {
+    font-size: 18px;
+    color: #ff6347; 
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 8px;
+  }
