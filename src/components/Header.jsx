@@ -15,7 +15,7 @@ export function Header({drinkType}) {
   };
   return (
     <>
-      <nav className="navbar p-1">
+      <nav className="navbar py-1 m-2">
         <img src="/brandNameBrown.svg" alt="Logo"></img>
         <h1 className="heading-text">Discover Our {drinkType} Drinks!</h1>
         <div className="button-group">
