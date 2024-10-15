@@ -4,7 +4,7 @@ import { Modal } from "./Modal";
 
 export function Card({ data }) {
   const [selectedDrink, setSelectedDrink] = useState(null);
-  const drinksToDisplay = data;
+  const drinksToDisplay = data.filter(drink => drink.title);
 
   if (!drinksToDisplay || drinksToDisplay.length === 0) {
     return <p className="no-drinks-message">No drinks found matching your input!</p>;
